@@ -6,6 +6,7 @@ worksheet <- read_excel("./dados/exercicio8.xls")
 array_var <- data.matrix(worksheet)
 data <- as.vector(array_var)
 View(data)
+paste(data)
 
 table <- data.frame(t(table(data)))[,-1]
 table$data <- as.numeric(levels(table$data))
