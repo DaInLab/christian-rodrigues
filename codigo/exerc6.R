@@ -1,5 +1,5 @@
 library(readxl)
-
+library(qcc)
 worksheet <- read_excel("./dados/exercicio6.xls")
 
 np <- worksheet$'Nº pessoas'

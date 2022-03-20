@@ -6,6 +6,7 @@ data <- worksheet$'Salários'
 
 table <- data.frame(t(table(data)))[,-1]
 table$data <- as.numeric(levels(table$data))
+library(tidyverse)
 table <- table %>% 
   mutate(Fr = 100*Freq/sum(Freq),
          Fac = cumsum(Freq),
